@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Home</title>
+        <script>
+            function jump()
+            {
+                var clicked=true;
+                window.location="/clicked";     //改变URL  注意：要使用"/"分隔符
+                alert("js alert :jump");   //此处处理js动作,可注释js不做操作  yuanjiee
+            }
+        
+            </script>
+    </head>
+    <body>
+        <h1>Page One</h1>
+        <button onclick="jump()">Click me</button>    <!---触发jump()事件  yuanjilee--->
+    </body>
+</html>

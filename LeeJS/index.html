@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            js test
+        </title>
+    </head>
+    
+    <script type="text/javascript">
+        function returnMyWebSite(org,arrayParam){
+            var url = "myapps:" + "&org=" + org;
+            for(var i in arrayParam){
+                url = url + "&" + i + "=" + arrayParam[i];
+            }
+            //网页操作
+            <!--js在网页中显示信息-->
+            document.write(url);
+            <!--js跳转网页-->
+            document.location = url;
+        }
+    
+        </script>
+    <body>
+        
+        <font size="100"> this is my website;</font><br>
+        <input type="button" value="return dic" onclick="returnMyWebSite('iashes',{'name':'yuanjilee','age':22,'sex':'famale'})" style="height=90px;width=200px;" />
+    </body>
+</html>
